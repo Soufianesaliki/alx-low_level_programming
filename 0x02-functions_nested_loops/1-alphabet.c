@@ -2,19 +2,21 @@
 
 /**
  * print_alphabet - Entry point
- * Description: prints 'abcdefghijklmnopqrstuvwxyz' followed by a new line
- * Return: Always 0 (success)
+ * Description: Prints alpabets
+ * Return: void
  */
 
 void print_alphabet(void)
 {
-	char alphabet = 'a';
+	char letter;
 
-	while (alphabet <= 'z')
+	letter = 'a';
+
+	while (letter <= 'z')
 	{
-		_putchar(alphabet);
-		alphabet++;
+		_putchar(letter);
+		letter++;
 	}
+
 	_putchar('\n');
-        return (0);
 }
