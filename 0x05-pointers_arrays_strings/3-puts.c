@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _puts - prints a string, followed by a new line
- * @str: pointer to string
+ * _puts - prints a string and a new line
+ * @str: pointer to a string to print
  *
- * Return: nothing
+ * Return: 0
  */
 
 void _puts(char *str)
