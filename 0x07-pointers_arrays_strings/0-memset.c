@@ -15,7 +15,6 @@ include "main.h"
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *d = s;
 	int i = 0;
 
 	while (i < n)
@@ -24,6 +23,6 @@ char *_memset(char *s, char b, unsigned int n)
 		s++;
 		i++;
 	}
-	return d;
+	return s;
 }
 
