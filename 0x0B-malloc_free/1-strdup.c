@@ -28,5 +28,5 @@ char *_strdup(char *str)
 		}
 		pt[len] = '\0';
 	}
-	return (pt);	
+	return (pt);
 }
