@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-/*
- * main - entry point
- * description: printing sizes of data types
- * return: 0
+/**
+ * main - Printing sizes of data types
+ * Return: 0
 */
 
 int main(void)
