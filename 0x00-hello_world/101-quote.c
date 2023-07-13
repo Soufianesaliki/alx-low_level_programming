@@ -1,6 +1,5 @@
 #include <unistd.h>
 #include <string.h>
-#include <stdio.h>
 
 /**
  * main - Printing a quote to the std error
@@ -10,8 +9,8 @@
 
 int main(void)
 {
-	char quote [100] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char quote[100] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
 	write(2, &quote, strlen(quote));
-	putchar('\n');
 	return (1);
 }
