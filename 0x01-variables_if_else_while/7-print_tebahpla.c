@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase & uppercase
+ * main - prints on reverse the alphabet in lowercase
  * i: loop variable
  * Return: 0
  */
@@ -10,10 +10,8 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i < 26; i++)
+	for (i = 25; i <= 0; i--)
 		putchar(97 + i);
-	for (i = 0; i < 26; i++)
-		putchar(65 + i);
 	putchar('\n');
 	return (0);
 }

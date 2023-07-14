@@ -8,14 +8,14 @@
 
 int main(void)
 {
-        int i;
+	int i;
 
-        for (i = 97; i < 97 + 26; i++)
+	for (i = 97; i < 97 + 26; i++)
 	{
 		if (i == 'e' || i == 'q')
 			continue;
-                putchar(i);
+		putchar(i);
 	}
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
