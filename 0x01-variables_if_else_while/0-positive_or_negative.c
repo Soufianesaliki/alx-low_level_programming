@@ -6,7 +6,7 @@
  * main - assign a random number to the variable n,
  * and test if n positive, negative or zero
  * n: integer
- * Rerturn: 0
+ * Return: 0
  */
 
 int main(void)
