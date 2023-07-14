@@ -23,7 +23,7 @@ int main(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
-					if (l == 0 && k == 0)
+					if (k == 0)
 						continue;
 					putchar(48 + i);
 					putchar(48 + j);
