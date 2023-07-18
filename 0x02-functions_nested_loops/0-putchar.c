@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * putchar - prints "_putchar"
+ * main - prints "_putchar"
  * Return: 0
  */
 
-int putchar(void)
+int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	int i = 0;
+	char w[11] = "_putchar\n";
+
+	while (w[i] != '\0')
+	{
+		_putchar(w[i]);
+		i++;
+	}
 	return (0);
 }
