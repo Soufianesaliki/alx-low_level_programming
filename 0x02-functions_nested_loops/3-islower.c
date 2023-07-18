@@ -6,7 +6,7 @@
  * Return: 1 if lowercase, 0 otherwise
  */
 
-int _islower(char c)
+int _islower(int c)
 {
 	if (c >= 97 && c < 97 + 26)
 		return (1);
