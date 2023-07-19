@@ -19,6 +19,6 @@ int main(void)
 	}
 	/*i is not incremented*/
 	printf("Infinite loop avoided! \\o/\n");
-	
+
 	return (0);
 }
