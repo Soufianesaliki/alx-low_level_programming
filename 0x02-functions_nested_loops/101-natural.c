@@ -10,7 +10,7 @@ void natural(void)
 {
 	int i, sum = 0;
 
-	for (i = n - 1024; i >= 0; i--)
+	for (i = 1024 - 1; i >= 0; i--)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 			sum = sum + i;
