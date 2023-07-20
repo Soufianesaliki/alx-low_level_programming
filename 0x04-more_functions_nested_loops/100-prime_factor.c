@@ -13,7 +13,7 @@ int main(void)
 
 	while (num > 0)
 	{
-		if (num % i == 0)
+		if (num % i == 0 && num != i)
 		{
 			if (i > largfact)
 			{
