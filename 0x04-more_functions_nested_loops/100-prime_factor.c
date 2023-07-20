@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	int i = 1, largfact = 0;
-	long int num = 612852475143;
+	unsigned long int i = 1, largfact = 0;
+	unsigned long int num = 612852475143;
 
 	while (num > 0)
 	{
-		if (num % i == 0 && num != i)
+		if (num % i == 0)
 		{
 			if (i > largfact)
 			{
@@ -23,6 +23,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d\n", largfact);
+	printf("%lu\n", largfact);
 	return (0);
 }
