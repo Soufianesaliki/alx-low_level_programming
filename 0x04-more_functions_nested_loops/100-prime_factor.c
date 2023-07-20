@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /** main - finds and prints the largest prime factor
  * of the number 612852475143, followed by a new line.
@@ -22,6 +22,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d\n", largfact);
+	printf("%lu\n", largfact);
 	return (0);
 }
