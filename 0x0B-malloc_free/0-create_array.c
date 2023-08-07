@@ -5,8 +5,8 @@
  * and initializes it with a specific char
  * @size: memory allocated
  * @c: character
- * Return: 	pointer to array
- * 		NULL if fail or 0
+ * Return:	pointer to array
+ *		NULL if fail or 0
  */
 
 char *create_array(unsigned int size, char c)
