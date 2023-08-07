@@ -14,15 +14,8 @@ char *str_concat(char *s1, char *s2)
 	int sz_str1 = 0, sz_str2 = 1;
 	char *new_str;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		if (s2 != NULL)
-			return (s2);
-		else if (s1 != NULL)
-			return (s1);
-		else
-			return (NULL);
-	}
+	if (s1 == NULL)
+		return (s2);
 	for (i = 0; s1[i]; i++)
 		sz_str1++;
 	for (i = 0; s2[i]; i++)
