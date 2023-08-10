@@ -15,11 +15,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int sz, sz1 = 0, sz2 = 0;
 	char *concat;
 
-	if (*s1)
+	if (s1 != NULL)
 		for (i = 0; s1[i]; i++)
 			sz1++;
 	printf("sz1 = %d\n", sz1);
-	if (*s2)
+	if (s2 != NULL)
 		for (i = 0; s2[i]; i++)
 			sz2++;
 	printf("sz2 = %d\n", sz2);
