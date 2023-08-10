@@ -4,7 +4,7 @@
  * _calloc - create calloc using malloc
  * @size: unsigned int
  * @nmemb: unsigned int
- * Return:
+ * Return: array
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -12,6 +12,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 	char *array;
 
+	if (nmemb == 0 || size == 0)
+		return (0);
 	array = (char *)malloc(nmemb * size);
 	if (array == NULL)
 		return (NULL);
