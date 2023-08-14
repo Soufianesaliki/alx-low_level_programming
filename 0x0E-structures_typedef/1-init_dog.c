@@ -15,6 +15,8 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	int i, len;
 
+	if (name == NULL || owner == NULL)
+		return;
 	for (i = 0; name[i]; i++)
 		len++;
 	d->name = (char *)malloc(sizeof(char) * (len + 1));
