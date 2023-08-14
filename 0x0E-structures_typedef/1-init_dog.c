@@ -1,5 +1,4 @@
 #include "dog.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -15,8 +14,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	int i, len;
 
-	if (name == NULL || owner == NULL)
-		return;
 	for (i = 0; name[i]; i++)
 		len++;
 	d->name = (char *)malloc(sizeof(char) * (len + 1));
@@ -31,7 +28,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	for (i = 0; name[i]; i++)
 		d->name[i] = name[i];
 	d->name[i] = '\0';
-	printf("%s\n", d->name);
 	d->age = age;
 	for (i = 0; owner[i]; i++)
 		d->owner[i] = owner[i];
