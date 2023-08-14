@@ -16,13 +16,13 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 
 	for (i = 0; name[i]; i++)
 		len++;
-	d->name = (char *)malloc(sizeof(char) * (len + 1));
+	d->name = (char *)malloc(sizeof(char) * len);
 	if (d->name == NULL)
 		return;
 	len = 0;
 	for (i = 0; owner[i]; i++)
 		len++;
-	d->owner = (char *)malloc(sizeof(char) * (len + 1));
+	d->owner = (char *)malloc(sizeof(char) * len);
 	if (d->owner == NULL)
 		return;
 	for (i = 0; name[i]; i++)
