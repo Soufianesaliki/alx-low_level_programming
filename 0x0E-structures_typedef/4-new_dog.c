@@ -46,17 +46,27 @@ void cpy_str(char *src, char *dest)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog = (dog_t *)malloc(sizeof(dog_t));
 	int len;
+	dog_t *new_dog;
 
+	new_dog = (dog_t *)malloc(sizeof(dog_t));
+	if (new_dog == NULL)
+		return (NULL);
 	len = len_str(name) + 1;
 	new_dog->name = (char *)malloc(sizeof(char) * len);
 	if (new_dog->name == NULL)
+	{
+		free(new_dog);
 		return (NULL);
+	}
 	len = len_str(owner) + 1;
 	new_dog->owner = (char *)malloc(sizeof(char) * len);
 	if (new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog);
 		return (NULL);
+	}
 	cpy_str(name, new_dog->name);
 	cpy_str(owner, new_dog->owner);
 	new_dog->age = age;
