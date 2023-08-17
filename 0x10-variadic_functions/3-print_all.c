@@ -9,12 +9,12 @@
  * Return: nothing
  */
 void print_all(const char * const format, ...){
-	long unsigned int printed = 0, i = 0;
+	int printed = 0, i = 0;
 	char *str;
 	va_list all_list;
 
 	va_start(all_list, format);
-	while (format[i] && format){
+	while (format[i] != '\0' && format != NULL){
 		switch(format[i]){
 			case 'c':
 				printf("%c", va_arg(all_list, int));
@@ -40,7 +40,7 @@ void print_all(const char * const format, ...){
 				printed = 0;
 				break;
 		}
-		if (i < strlen(format) - 1 && printed == 1)
+		if (format[i + 1] != '\0' && printed == 1)
 			printf(", ");
 		i++;
 	}
