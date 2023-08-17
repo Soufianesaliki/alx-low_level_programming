@@ -14,14 +14,14 @@ void print_all(const char * const format, ...){
 	va_list all_list;
 
 	va_start(all_list, format);
-	while (format[i]){
+	while (format[i] && format){
 		switch(format[i]){
 			case 'c':
 				printf("%c", va_arg(all_list, int));
 				printed = 1;
 				break;
 			case 'i':
-				printf("%d", va_arg(all_list, int));
+				printf("%i", va_arg(all_list, int));
 				printed = 1;
 				break;
 			case 'f':
