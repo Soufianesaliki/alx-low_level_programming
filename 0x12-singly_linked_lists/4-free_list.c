@@ -7,22 +7,13 @@
 */
 void free_list(list_t *head)
 {
-	list_t *tmp = head;
+	list_t *tmp;
 
-	if (head)
+	while (head != NULL)
 	{
-		while (head->next != NULL)
-		{
-			printf("1, ");
-			head = head->next;
-			free(tmp->str);
-			free(tmp->next);
-			free(tmp);
-			tmp = head;
-		}
-	free(head->next);
-	free(head->str);
-	free(head);
-	free(tmp);
+		tmp = head;
+		head = head->next;
+		free(tmp->str);
+		free(tmp);
 	}
 }
