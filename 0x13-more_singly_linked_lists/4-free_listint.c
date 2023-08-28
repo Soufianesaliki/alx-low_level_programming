@@ -7,7 +7,8 @@
 */
 void free_listint(listint_t *head)
 {
-	free_listint(head->next);
+	if (head->next)
+		free_listint(head->next);
 	if (head)
 	{
 		if (head->next)
