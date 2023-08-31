@@ -9,12 +9,11 @@
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int bits = 0, deff = 0;
-
+	unsigned long int bits = 0, deff = 0, i = 0;
 	deff = n ^ m;
 	if (deff == 0)
 		return (0);
-	while (deff > 0)
+	while (i > (sizeof(unsigned long int) * 8))
 	{
 		if ((deff & 1) == 1)
 			bits += 1;
