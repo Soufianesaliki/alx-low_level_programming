@@ -3,8 +3,8 @@
 /**
  * flip_bits - gives the number of bits you
  * would need to flip to get from one number to another
- * @n: pointer to unsigned long int
- * @index: unsigned int position of bit
+ * @n: first unsigned long int
+ * @m: second unsigned long int
  * Return: int number of bits
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
